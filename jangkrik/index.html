@@ -1,0 +1,254 @@
+
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <title>VIP Luxury Slot Gaming</title>
+    <link rel="canonical" href="https://example.com/slot">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+    <!-- AMP Boilerplate -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #C5A028;
+            --accent-gold: #FFD700;
+            --deep-purple: #1A0F3C;
+            --royal-black: #0A0A0A;
+            --pure-white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--deep-purple), var(--royal-black));
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Luxury Pattern Background */
+        .pattern-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(45deg, rgba(255,215,0,0.05) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255,215,0,0.05) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(255,215,0,0.05) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(255,215,0,0.05) 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .main-container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: clamp(20px, 5vw, 40px);
+            position: relative;
+            gap: clamp(20px, 3vh, 40px);
+        }
+
+        /* Brand Logo Section */
+        .brand-section {
+            text-align: center;
+            margin-bottom: clamp(20px, 4vh, 60px);
+        }
+
+        .vip-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary-gold), var(--accent-gold));
+            color: var(--royal-black);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .brand-name {
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            font-weight: 800;
+            background: linear-gradient(to right, var(--pure-white), var(--primary-gold), var(--pure-white));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: 2px;
+        }
+
+        .brand-tagline {
+            color: var(--primary-gold);
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            font-weight: 500;
+            margin-top: 10px;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+        /* Premium CTA Button */
+        .cta-section {
+            width: 100%;
+            max-width: 360px;
+            margin: clamp(20px, 4vh, 40px) 0;
+        }
+
+        .premium-button {
+            width: 100%;
+            padding: clamp(15px, 3vh, 25px) clamp(30px, 5vw, 50px);
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--royal-black);
+            background: linear-gradient(45deg, var(--primary-gold), var(--accent-gold), var(--primary-gold));
+            background-size: 200% 100%;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 5px 15px rgba(212, 175, 55, 0.3),
+                0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .premium-button:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 
+                0 8px 20px rgba(212, 175, 55, 0.4),
+                0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Statistics Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(10px, 2vw, 20px);
+            width: 100%;
+            max-width: 600px;
+            margin-top: clamp(20px, 3vh, 40px);
+        }
+
+        .stat-card {
+            background: rgba(26, 15, 60, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: clamp(12px, 2vw, 20px);
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-value {
+            color: var(--primary-gold);
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: var(--pure-white);
+            font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 480px) {
+            .main-container {
+                justify-content: flex-start;
+                padding-top: 60px;
+            }
+
+            .brand-section {
+                margin-bottom: 30px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                max-width: 280px;
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .premium-button {
+                padding: 18px 30px;
+            }
+        }
+
+        /* Landscape Mode */
+        @media (max-height: 480px) and (orientation: landscape) {
+            .main-container {
+                padding: 20px;
+                justify-content: center;
+            }
+
+            .brand-section {
+                margin-bottom: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pattern-overlay"></div>
+    <div class="main-container">
+        <div class="brand-section">
+            <div class="vip-badge">EXCLUSIVE ACCESS</div>
+            <h1 class="brand-name">Jangkrik4D</h1>
+            <div class="brand-tagline">LUXURY GAMING EXPERIENCE</div>
+        </div>
+
+        <div class="cta-section">
+            <a href="https://gatottech.io/menyala" class="premium-button">Daftar Sekarang!</a>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">97.5%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$1M+</div>
+                <div class="stat-label">Jackpot</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
